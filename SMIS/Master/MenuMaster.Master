@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuMaster.master.cs" Inherits="SMIS.Master.MenuMaster" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Style/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../Script/Menu.js"></script>
+    <link href="../Style/bootstrap.css" rel="stylesheet" />
+    <script src="../Script/Menu.js"></script>
+    <script src="../Script/jquery-1.4.1.js"></script>
+    <script src="../Script/Search.js"></script>
+   </head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <asp:ContentPlaceHolder ID="cphMenu" runat="server">
+            <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../Admin/MangePanle.aspx">Store Management</a>
+            </div>
+            <div style="margin-left:40%">
+                <asp:Label ID="lblName" CssClass="navbar-brand" Font-Bold="true" runat="server" Text="Super Admin"></asp:Label>
+            </div>
+            </nav>
+            <div id="divMenu" runat="server">
+
+            </div>
+            <br />
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cphContain" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    
+</body>
+</html>
